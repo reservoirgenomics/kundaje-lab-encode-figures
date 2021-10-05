@@ -1,0 +1,2 @@
+wget http://mitra.stanford.edu/kundaje/surag/resgen/beds/overlap.peaks.resolved.500.bed.gz
+awk '{split($1,a,":"); split(a[2],b,"-");  print a[1] "\t" b[1] "\t" b[2] "\t" "NANOG"}' NANOG.links.tsv > NANOG.links.bed
